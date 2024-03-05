@@ -1,0 +1,74 @@
+    ##  IF- ELSE/ IF- ELIF- ELSE CONDITION
+    
+#1. INTENDATION PLAYS A VITAL ROLE IN THIS-- AS-
+'''
+x=10
+if x==10:
+print("it is equal to 10")      #it will throw error as we need to give tab space for statement inside if.
+
+'''
+    
+#2. if the condition is statisfied then the statement inside it will be executed if not the else will be executed
+x=10
+if x==10:
+    print("the x is equal to 10")
+else:
+    print("the x is not equal to 10")
+    
+print("\n")   
+
+#3. we can also have two or multiple number of 'if' condition
+'''here all the condition is checked independently and the block is executed accordingly'''
+'''like here the 1st,2nd 'if' will be satisfied and the 3rd isnt mean first 2 block will be executed'''
+if x>0:
+    print("x is greater than 0")
+if x==10:
+    print("x is equal to 10")
+if x!=10:
+    print("x is not equal to 10")  #if u have an else for this 'if' then if this conditon fails than that else will be executed.
+    
+print("\n")
+
+#4. we can use 'elif' condition
+'''here in this they will follow an order like 1st 'if' will be checked then 'elif' and then else .'''
+'''in case the condition in 'if' is statisfed then they wont check the elif at all. the corresponding block for true will 
+be executed...'''
+if x>0:
+    print("x is greater than 0")
+elif x==10:
+    print("x is equals to 10")  #as if is satisfied they wont check the elif at all.
+elif x!=10:
+    print("x is not equal to 10")
+    
+#5. short if / if-else condition-- called ternary operation
+
+if x==10: print("x is equal to 10") 
+print("\n")
+
+print("X isn't equal to 10 ") if x!=10 else print("X is equal to 10 ")
+print("\n")
+
+#6. u can have AND/OR/NOT operation between the numbers
+
+a=10
+b=20
+if a==10 and b==20: print("the sum of a+b using and is:",a+b)
+
+if a==10 or b==0: print("the sum of a+b using or is:",a+b)
+
+if not a > b: print("a is NOT greater than b")
+
+#7. nested 'if condition'
+
+if a<b:
+    if b==20:
+        print("b is = 20")
+    else:
+        print("b is not = 20")
+else:
+    print("a is less than b")
+
+#8. using 'pass' keyword
+
+if a<b:
+    pass
