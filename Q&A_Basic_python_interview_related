@@ -1,0 +1,146 @@
+Basic Python Questions
+
+1.What is the importance of the self keyword in Python?
+The self keyword is used as the first parameter in instance methods of a class, representing the instance itself.
+
+2.What is the difference between a List and a Tuple?
+Lists are mutable (can be changed), while tuples are immutable (cannot be changed).
+
+3.What does it mean when a method is defined as static?
+A static method belongs to the class rather than any instance and can be called without creating an instance of the class.
+
+4.What is NumPy in Python?
+NumPy is a library for numerical operations and scientific computing, providing support for arrays and matrices.
+
+5.Explain name mangling in Python.
+Name mangling is a technique used to prevent naming conflicts in subclasses by prefixing variable names with an underscore.
+
+6.What are Python’s key features?
+Dynamic typing, interpreted language, readability, extensive libraries, etc.
+
+7.What is the difference between Python 2 and Python 3?
+Major differences include print as a function, integer division behavior, unicode handling, etc.
+
+8.What is PEP 8 and why is it important?
+PEP 8 is the Python style guide to write clean, readable, and consistent Python code.
+
+9.Explain the difference between == and is in Python.
+ == checks for value equality, while is checks if two objects refer to the same memory location.
+
+10.What are mutable and immutable types in Python?
+ Mutable types (e.g., list, dictionary) can be changed after creation, while immutable types (e.g., string, tuple) cannot.
+
+11.What is the difference between a list and a tuple?
+A list is mutable and allows changes, while a tuple is immutable and cannot be altered after creation.
+
+12.How do you remove duplicates from a list?
+Use a set or a loop.
+
+13. What are Python’s built-in data types?
+Lists, tuples, dictionaries, sets, strings, integers, floats, booleans, etc.
+
+14. What is a dictionary in Python?
+A dictionary is a collection of key-value pairs, where each key is unique.
+
+15.Explain the difference between *args and kwargs.
+*args allows you to pass a variable number of positional arguments to a function, while **kwargs allows you to pass a variable number of keyword arguments.
+
+16.What are default arguments in a function?
+ Parameters that have default values in case the function is called without those arguments.
+
+17.What is the purpose of the lambda function?
+It is an anonymous function in Python, often used for short, simple functions.
+
+python
+Copy code
+square = lambda x: x ** 2
+print(square(5))  # Output: 25
+
+18.Explain decorators in Python.
+Decorators are functions that modify the behavior of other functions or methods, often used to add functionality like logging or validation.
+________________________________________
+Object-Oriented Programming (OOP)
+
+
+These questions focus on classes, inheritance, and other OOP principles in Python.
+1.What is a class in Python?
+A blueprint for creating objects (instances), defining attributes (variables) and methods (functions).
+
+2.What is the difference between a class and an instance?
+A class is a blueprint, while an instance is a concrete object created from that blueprint.
+
+3.Explain inheritance in Python.
+A way to create a new class that inherits methods and attributes from an existing class.
+
+4.What are the __init__ and self keywords in Python?
+__init__ is a constructor method that initializes an object’s state, and self refers to the instance of the class.
+
+5.What are Python’s access specifiers (public, private, protected)?
+Python has:
+
+	Public: Accessible anywhere (default).
+	Protected: Prefix with a single underscore (_), indicating internal use.
+	Private: Prefix with double underscores (__), making it harder to access from outside the class.
+
+
+Error Handling and Exceptions
+
+
+1.How do you handle exceptions in Python?
+Use try, except, finally, and else blocks.
+try:
+    result = 10 / 0
+except ZeroDivisionError:
+    print("Cannot divide by zero")
+finally:
+    print("This will always execute")
+
+2.What is the difference between raise and assert?
+raise is used to trigger exceptions explicitly, while assert is used for debugging purposes to test conditions that must be true.
+
+3.What are built-in exceptions in Python?
+Examples include TypeError, ValueError, IndexError, KeyError, ZeroDivisionError, etc.
+________________________________________
+Advanced Python Concepts
+
+
+1.Explain the Global Interpreter Lock (GIL).
+GIL is a mechanism in CPython that ensures only one thread executes Python bytecode at a time, which can be a bottleneck in multi-threaded applications.
+
+2.What is the difference between multithreading and multiprocessing in Python?
+Multithreading involves multiple threads within the same process, while multiprocessing involves multiple processes with separate memory spaces.
+
+3.What is a generator in Python?
+A generator is a function that returns an iterator and allows lazy evaluation, yielding items one at a time with the yield keyword.
+
+4.Explain list comprehensions.
+A concise way to create lists based on existing lists or iterables.
+squares = [x ** 2 for x in range(5)]
+________________________________________
+File Handling
+
+
+1.How do you open and close a file in Python?
+Use the open() function to open a file, and close() to with open("file.txt", "r") as file:
+    content = file.read()
+
+2.What are the modes of opening a file in Python?
+'r' for reading, 'w' for writing, 'a' for appending, and 'b' for binary mode.
+________________________________________
+Libraries and Modules
+
+
+1.What is a module in Python?
+A file containing Python code (functions, variables, classes) that can be imported and used in other files.
+
+2.How do you install third-party libraries in Python?
+Use pip, the package manager, to install libraries.
+pip install numpy
+
+3.What is __name__ == '__main__' in Python?
+It is used to check whether a script is being run directly or imported as a module.
+
+
+
+
+
