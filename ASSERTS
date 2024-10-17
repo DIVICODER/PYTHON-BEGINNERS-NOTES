@@ -12,12 +12,12 @@ y = 3
 assert y > 5, "y is not greater than 5"     # This will raise an AssertionError with the message
 
 
-output:
+#output:
 
-AssertionError: y is not greater than 5
+#AssertionError: y is not greater than 5
 
-Use Cases of assert:
+'''Use Cases of assert:
 
 Debugging:   It is commonly used during development to check conditions that should never happen (e.g., input validation).
 
-Ensuring invariants:   You can ensure certain conditions remain true throughout the execution of the program (e.g., checking the validity of algorithm steps).
+Ensuring invariants:   You can ensure certain conditions remain true throughout the execution of the program (e.g., checking the validity of algorithm steps).'''
