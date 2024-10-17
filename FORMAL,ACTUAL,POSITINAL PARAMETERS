@@ -1,0 +1,20 @@
+ ##Formal Arguments
+
+ def greet(name):  # 'name' is a formal argument
+    print(f"Hello, {name}")
+
+##Actual Arguments
+
+greet("Alice")  # "Alice" is an actual argument
+
+
+##Positional Arguments-- actual parameter match with formal parameter based on there position in the function call
+
+def describe_person(name, age, occupation):
+    print(f"{name} is {age} years old and works as a {occupation}.")
+
+describe_person("Alice", 30, "Engineer")  # Positional arguments: "Alice", 30, "Engineer"
+
+
+#the bellow is incorrect
+describe_person("Engineer", 30, "Alice")  # Incorrect order
