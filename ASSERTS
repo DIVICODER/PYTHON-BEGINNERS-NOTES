@@ -1,0 +1,23 @@
+'''assert is a keyword used to test if a given condition is true.
+It helps in debugging by allowing you to check assumptions in your code.
+If the condition evaluates to True, the program continues executing. 
+If the condition evaluates to False, an AssertionError is raised, stopping the program and optionally displaying an error message.'''
+
+# Syntax :  assert condition, optional_message
+
+x = 10
+assert x > 5, "x should be greater than 5"  # This will pass since 10 > 5
+
+y = 3
+assert y > 5, "y is not greater than 5"     # This will raise an AssertionError with the message
+
+
+output:
+
+AssertionError: y is not greater than 5
+
+Use Cases of assert:
+
+Debugging:   It is commonly used during development to check conditions that should never happen (e.g., input validation).
+
+Ensuring invariants:   You can ensure certain conditions remain true throughout the execution of the program (e.g., checking the validity of algorithm steps).
