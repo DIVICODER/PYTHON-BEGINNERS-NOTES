@@ -66,13 +66,12 @@ for x in dupl:
 print("\n")
 
 #   CLEARING THE DUPLICATE ARRAY
-print("clearing the duplicate array")
-dupl=array('i')
-for x in dupl:
-    print(x,end=" ")
-print("\n")
-
-print("this is my orginal array")
+no_duplicates = array('i')
 for x in arr:
-    print(x,end=" ")
-print("\n")
+    if x not in no_duplicates:
+        no_duplicates.append(x)
+
+print("Array after removing duplicates:")
+for x in no_duplicates:
+    print(x, end=" ")
+print("\n"))
